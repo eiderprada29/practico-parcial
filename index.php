@@ -185,6 +185,7 @@
             </div>
         </div>
     </footer>
+    jdtojewish
 
     <div class="footer-copy">
         <p>Copyright 2024 por Estudiantes IV Semestre - <span>UNIMINUTO </span>- Ingenieria de Sistemas</p>
