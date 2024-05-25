@@ -1,28 +1,29 @@
 <?php
-    
-    session_start();
+session_start();
 
-    class Conectar{
-        protected $dbh;
+class Conectar
+{
+    protected $dbh;
 
-        protected function Conexion(){
-        try{
-
-                $conectar = $this->dbh = new PDO("mysql:host=localhost;dbname=proyecto","root","");
-
-                return $conectar;} 
-            catch (Exception $e) {
-        print "iError BD!:". $e->getMessage(). "<br/>";
-        die();
+    protected function Conexion()
+    {
+        try {
+            $conectar = $this->dbh = new PDO("mysql:host=localhost;dbname=proyecto", "root");
+            return $conectar;
+        } catch (Exception $e) {
+            print "Error BD!: " . $e->getMessage() . "<br/>";
+            die();
         }
     }
 
-public function set_names(){
-    return $this->dbh->query("SET NAMES 'utf8'");
+    public function set_names()
+    {
+        return $this->dbh->query("SET NAMES 'utf8'");
     }
 
-public static function ruta(){
-    return "http://localhost/practico/";
+    public static function ruta()
+    {
+        return "http://localhost/practico/";
     }
 }
 
