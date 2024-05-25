@@ -14,7 +14,7 @@ class Usuario extends Conectar {
                       </script>';
                 exit();
             } else {
-                $sql = "SELECT * FROM usuarios WHERE email = ? AND contrasena = ? AND estado = 1";
+                $sql = "SELECT * FROM usuarios WHERE email = ? AND password = ? AND estado=1 ";
                 $stmt = $conectar->prepare($sql);
                 $stmt->bindValue(1, $correo);
                 $stmt->bindValue(2, $password);
@@ -31,7 +31,7 @@ class Usuario extends Conectar {
                     exit();
                 } else {
                     echo '<script>
-                            window.location.href = "'.Conectar::ruta().'index.php?m=1";
+                            window.location.href = "'.Conectar::ruta().'login.php?m=1";
                           </script>';
                     exit();
                 }
