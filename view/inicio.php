@@ -34,7 +34,7 @@ if(isset($_SESSION["id"])){
     <!-- Brand Logo -->
     <a href="../index.php" class="brand-link">
   
-      <span class="brand-text font-weight-light">PORTAFOLIO</span>
+      <span class="brand-text font-weight-light">Portafolio_Engineer</span>
     </a>
 
     <!-- Sidebar -->
@@ -42,7 +42,7 @@ if(isset($_SESSION["id"])){
       <!-- Sidebar user (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-
+          <img src="../imagenes/me_inverso.jpg" class="img-circle elevation-2" alt="User Image" style="width: 35px; height: 35px;">
         </div>
         <div class="info">
           <a href="#" class="d-block"><?php echo $_SESSION["nombre"];?></a>
