@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio_Engineer</title>
-    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="../practico/css/style.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -189,6 +189,6 @@
     <div class="footer-copy">
         <p>Copyright 2024 por Estudiantes IV Semestre - <span>UNIMINUTO </span>- Ingenieria de Sistemas</p>
     </div>
-    <script src="../parcial-juandiego/javascript/script.js"></script>
+    <script src="../practico/js/script.js"></script>
 </body>
 </html>
