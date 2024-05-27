@@ -86,7 +86,7 @@
 <!----------Seccion de Acerca de--------------->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="../parcial-juandiego/imagenes/me_inverso.jpg" alt="">
+            <img src="../practico/imagenes/me_inverso.jpg" alt="">
         </div>
 
         <div class="about-text">
@@ -105,19 +105,19 @@
         </div>
         <div class="portafolio-content">
             <div class="row">
-                <img src="../parcial-juandiego/imagenes/certificado_google_cloud.jpeg">
+                <img src="../practico/imagenes/certificado_google_cloud.jpeg">
             </div>
 
             <div class="row">
-                <img src="../parcial-juandiego/imagenes/certificado_excel.jpeg">
+                <img src="../practico/imagenes/certificado_excel.jpeg">
             </div>
 
             <div class="row">
-                <img src="../parcial-juandiego/imagenes/certificado_mentalidad.jpeg">
+                <img src="../practico/imagenes/certificado_mentalidad.jpeg">
             </div>
 
             <div class="row">
-                <img src="../parcial-juandiego/imagenes/certificado_transformacion.jpeg">
+                <img src="../practico/imagenes/certificado_transformacion.jpeg">
             </div>
         </div>
     </section>
