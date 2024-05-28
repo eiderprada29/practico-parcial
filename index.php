@@ -21,6 +21,7 @@
             <li><a href="#about">Acerca de</a></li>
             <li><a href="#portafolio">Portafolio</a></li>
             <li><a href="#contact">Contactame</a></li>
+            <li><a href="../practico/login.php">Administración</a></li>
         </ul>
     </header>
     <script>

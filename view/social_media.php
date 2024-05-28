@@ -125,82 +125,96 @@ if(isset($_SESSION["id"])){
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-    <div class="contenido-susan">
-        <?php
-            $proyecto = "Admón de Redes Sociales";
-            ?>
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <div class="container-fluid">
+                        <div class="row mb-2">
+                            <div class="col-sm-6">
+                                <h1>Blank Page</h1>
+                            </div>
+                            <div class="col-sm-6">
+                                <ol class="breadcrumb float-sm-right">
+                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item active">Blank Page</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div><!-- /.container-fluid -->
+                </section>
 
-            <!DOCTYPE html>
-            <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title><?php echo $proyecto; ?></title>
-                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-                <style>
-                    .contenido-susan {
-                        background-color: #fff;
-                        border-radius: 8px;
-                        margin-left: 20px;
-                        margin-right: 20px;
-                    }
-                    .btn-create {
-                        border-color: blue; /* Borde azul */
-                        color: blue; /* Texto azul */
-                    }
-                    .btn-load {
-                        border-color: gray; /* Borde gris */
-                        color: gray; /* Texto gris */
-                    }
-                </style>
-            </head>
-            <body>
-                <div class="col-lg-8 mx-auto p-3 py-md-5">
-                    <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
-                        <a href="#" class="d-flex align-items-center text-dark text-decoration-none">
-                            <span class="fs-4"><?php echo $proyecto; ?></span>
-                        </a>
-                    </header>
-                    <div class="mt-3">
-                            <a href="process.php?regenerar=1" class="btn btn-create">crear</a>
-                            <a href="reset.php" class="btn btn-load">cargar</a>
+                <!-- Main content -->
+                <section class="content">
+
+                    <div class="card card-primary card-outline">
+                        <div class="card-header">
+                            <h3 class="card-title">
+                                <i class="fas fa-edit"></i>
+                                Social Media
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-default">
+                                Cargar
+                            </button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-primary">
+                                Crear
+                            </button>
+                            <br>
+                            <br>
+                            <div class="card-body">
+                                <table id="social_media_data" class="table display responsive wrap">
+                                    <thead>
+                                        <tr>
+
+                                            <th class="wd-15p">Iconos</th>
+                                            <th class="wd-15p">Enlaces</th>
+                                            <th class="wd-10p"></th>
+                                            <th class="wd-10p"></th>
+                                        </tr>
+                                    </thead>
+                                    
+                                </table>
+                            </div>
+                        </div>
+                        <!-- /.card -->
                     </div>
+                </section>
+                <!-- /.content -->
+            </div>
+            <!-- /.content-wrapper -->
+
+            <footer class="main-footer">
+                <div class="float-right d-none d-sm-block">
+                    <b>Version</b> 3.1.0
                 </div>
-            </body>
-            </html>
-    </div>
-  </div>
+                <strong>Copyright &copy; 2024 <a href="#">AdminLTE</a>.</strong> All rights reserved.
+            </footer>
 
-  <footer class="main-footer">
-    <div class="float-right d-none d-sm-block">
-      <b>Version</b> 3.1.0
-    </div>
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
-  </foote
+            <!-- Control Sidebar -->
+            <aside class="control-sidebar control-sidebar-dark">
+                <!-- Control sidebar content goes here -->
+            </aside>
+            <!-- /.control-sidebar -->
+        </div>
+        <!-- ./wrapper -->
 
-  <!-- /.content-wrapper -->
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
-  <!-- /.control-sidebar -->
-</div>
-<!-- ./wrapper -->
+        <!-- jQuery -->
+        <script src="../public/plugins/jquery/jquery.min.js"></script>
+        <!-- Bootstrap 4 -->
+        <script src="../public/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../public/dist/js/adminlte.min.js"></script>
+        <!-- AdminLTE for demo purposes -->
+        <script src="../public/dist/js/demo.js"></script>
+    </body>
 
-<!-- jQuery -->
-<script src="../public/plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="../public/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- AdminLTE App -->
-<script src="../public/dist/js/adminlte.min.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="../public/dist/js/demo.js"></script>
-</body>
-</html>
+
+    <?php require_once("../modulos/js.php"); ?>
+        <script type="text/javascript" src="../view/js/social_media.js"></script>
+        </html>
 
 <?php
-    }else{
-        header("Location:".Conectar::ruta()."/view/error.php");
-    }
-
+} else {
+    header("Location:" . Conectar::ruta() . "/view/error.php");
+}
 ?>
