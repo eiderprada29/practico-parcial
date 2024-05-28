@@ -11,3 +11,5 @@
 <script src="../public/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- AdminLTE App -->
 <script src="../public/dist/js/adminlte.js"></script>
+<?php require_once("../modulos/js.php"); ?>
+<script type="text/javascript" src="../view/js/social_media.js"></script>
