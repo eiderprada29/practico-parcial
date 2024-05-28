@@ -32,7 +32,7 @@
             $sql=$social->prepare($sql);
             sql->bindValue(1,$socmed_icono);
             sql->bindValue(2,$socmed_url);
-            sql->bindValue(2,$socmed_id);
+            sql->bindValue(3,$socmed_id);
             $sql->execute();
             return $resultado=$sql->fetchAll();
         }
