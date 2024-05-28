@@ -32,8 +32,27 @@
             break;
 
         case "eliminar":
+            $social_media->delete_social_media($_POST["socmed_id"];)
             break;
         
         case "listar":
+            $datos=$social_media->get_social_media();
+            $data= Array();
+            foreach($datos as $row){
+                $sub_array = array();
+                $sub_array[] = $row["socmed_icono"];
+                $sub_array[] = $row["socmed_url"];
+
+                $sub_array[] = '<button type="button" onClick="editar"('.$row["socmed_id"].');" id="'.$row["socmed_id"].'"class="btn btn-outline-warning btn-icon"><div><i class="fa fa-edit"></i></div></button>';
+                $sub_array[] = '<button type="button" onClick="eliminar"('.$row["socmed_id"].');" id="'.$row["socmed_id"].'"class="btn btn-outline-danger btn-icon"><div><i class="fa fa-close"></i></div></button>';
+                $data[] = $sub_array;
+            }
+
+            $results = array(
+                "sEcho"=>1,
+                "iTotalRecord"=>count($data),
+                "iTotalDisplayRecords"=>count($data),
+                "aaData"=>$data);
+            echo json_encode(results);
             break;
     }
