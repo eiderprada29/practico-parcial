@@ -1,3 +1,6 @@
+<?php   
+    for($i=0;$i<sizeof($soc);$i++):
+?>
 <?php
     class estudios extends Conectar{
 

@@ -1,3 +1,7 @@
+<?php   
+    for($i=0;$i<sizeof($soc);$i++):
+?>
+
 <?php
     class social_media extends Conectar{
 
